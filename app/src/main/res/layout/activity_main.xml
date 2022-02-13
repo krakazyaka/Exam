@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.rybakov.exam.MainActivity"
+    android:background="#606060">
+
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop = "true"
+        android:layout_centerHorizontal= "true"
+        android:inputType="textPersonName"
+        android:hint="Введите имя"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:id="@+id/etPassword"
+        android:ems="10"
+        android:layout_below="@id/etUsername"
+        android:layout_centerHorizontal="true"
+        android:hint="Введите пароль"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"/>
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Войти"
+        android:layout_below="@id/etPassword"
+        android:onClick="login"
+        />
+</RelativeLayout>
